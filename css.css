@@ -1,0 +1,258 @@
+body { 
+  overflow-x: hidden;
+  overflow-y: auto; 
+  background: linear-gradient(#381E32, #25171A, #4B244A, #533A7B);
+  background-color: #533A7B;
+  background-attachment: fixed;
+  background-repeat: repeat;
+  background-size: 20px;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: 50px;
+}
+
+/* fonts */
+@font-face { 
+  font-family: Para; 
+  src: url('webalpha.ttf'); 
+} 
+
+@font-face { 
+  font-family: Head; 
+  src: url('hand.ttf'); 
+} 
+
+@font-face { 
+  font-family: Title; 
+  src: url('Bubble.ttf'); 
+} 
+
+/* general tags */
+img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+}
+
+div {
+  padding: 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  vertical-align: top;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  border: 2px solid #987057;
+  border-radius: 3px;
+  color: #4B244A;
+  background-color: #DAE5EF;
+}
+
+input:hover {
+  color: #4B244A;
+  background: white; 
+}
+
+textarea {
+  height: 200px;
+  width: 90%;
+  color: black;
+  background: white;
+  border: 2px solid #987057;
+  border-radius: 3px;
+}
+
+textarea:hover {
+  border: 2px solid #4B244A;
+  border-radius: 3px;
+}
+
+/* text */
+h1 {
+  font-family: Head; 
+  color: #4B244A;
+}
+
+h2 {
+  font-family: Head; 
+  color: #4B244A;
+}
+
+h3 {
+  font-family: Head; 
+  color: #4B244A;
+}
+
+h4 {
+  font-family: Head; 
+  color: #4B244A;
+}
+
+h5 {
+  font-family: Head; 
+  color: #4B244A;
+}
+
+h6 {
+  font-family: Head;
+  color: #4B244A; 
+}
+
+p {
+  font-family: Para; 
+  color: #25171A;
+}
+
+li {
+  font-family: Para; 
+  color: #25171A;
+}
+
+a {
+  color: #4B244A;
+  background: none; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  background: #4B244A; 
+  text-decoration: none;
+}
+
+:selection {
+  color: white;
+  background: #4B244A; 
+}
+
+#gradient_text {
+  font-size: 3em;
+  -webkit-text-fill-color: transparent; 
+  background: linear-gradient(to right, #4F2F63, #5E5297, #533A7B, #4B244A); 
+  /*#381E32, #25171A, #4F2F63, #5E5297, #533A7B, #4B244A*/
+  -webkit-background-clip: text; 
+  margin: 0px;
+  margin-top: 15px;
+}
+
+.title {
+  font-family: Title;
+}
+
+/* table layout */
+#main {
+  width: 70%;
+  padding: 0;
+  margin: 0;
+}
+
+#side {
+  width: 30%;
+  padding: 0;
+  margin: 0;
+}
+
+#top {
+  width: 75%;
+  height: auto;
+  background-color: #B6CCD9;
+  border: 5px solid #987057;
+  border-radius: 3px;
+  padding: 1%;
+  margin: 3%;
+}
+
+#mainbar {
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 90%;
+  padding: 1%;
+  padding-left: 3%;
+  margin-bottom:  2%;
+  background-color: #B6CCD9;
+  border: 5px solid #987057;
+  border-radius: 3px;
+}
+
+#sidebar-group {
+  position: sticky;
+  top: 3%;
+}
+
+#sidebar {
+  width: 75%;
+  background-color: #B6CCD9;
+  border: 5px solid #987057;
+  border-radius: 3px;
+  padding: 1%;
+  padding-left: 5%;
+  margin: 0px;
+  margin-left: 5%;
+  margin-top:  3%;
+  margin-bottom:  2%;
+}
+
+/* bonus features */
+#skip-to-content {
+  position: absolute;
+  left: -10000px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+#skip-to-content:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
+
+.bounce {
+  position: relative;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes bounce {
+  from {bottom: -2px;}
+  to {bottom: 3px;}
+}
+
+#head {
+  width: 65%;
+}
+
+#fill {
+  height: 40px;
+  width: 260px;
+}
+
+#star-color {
+  color: #9AAFCD;
+}
+
+/*
+body:-webkit-scrollbar {
+  width: 10px;
+}
+
+body:-webkit-scrollbar-track {
+  background: #F7AEB6;
+}
+
+body:-webkit-scrollbar-thumb {
+  background: #533A7B;
+}
+*/
