@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+      <title>Saturn's Laundromat</title>
+      <meta name="description" content="This is a page for all the html,css, and javascript coding I'm proud of.">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="Images/favicon.ico" type="image/x-icon"/>
+      <link rel="stylesheet" href="css.css"/>
+      <style type=text/css>
+
+.rain {
+  z-index: -1;
+}
+
+      </style>
+      
+  </head>
+  <body>
+  
+    <a href="#content" id="skip-to-content">Skip to content</a>
+    
+  <table>
+
+<!-- Header -->
+  <tr>
+  <td colspan="2" align="center">
+    <div align="center" id="top">
+        
+        <h1 id="gradient_text"><span class="bounce">✩</span> Coding Projects <span class="bounce">✩</span></h1>
+        
+    </div>
+  </td>
+  </tr>
+
+<!-- Sidebar -->
+  <tr>
+  <td id="side">
+    <div id="sidebar-group">
+    <div id="sidebar">
+        
+        <h2 align="left"><a href="index.html">Back</a></h2>
+        
+    </div>   
+    <div id="sidebar">
+        
+        <h3>Coding Tip:</h3>
+        
+        <p>These css attributes prevent pixelated images from appearing blurry:</p>
+        <p>image-rendering: pixelated;<br>
+        image-rendering: -moz-crisp-edges;<br>
+        image-rendering: crisp-edges;</p>
+        
+    </div>
+    </div>
+  </td>
+
+<!-- Main Body -->
+  <td id="main">
+    <main id="content">
+    
+    <div id="mainbar" align="center">
+        
+        <div id="head">
+            
+            <h2 align="center">Coding Project Pages:</h2>
+            
+            <p align="left"><a href="genshin.html">Genshin To-Do List</a> - page that can be used to create a todo list inspired by Genshin daily quests only halfway done but it has the barebones functions working</p>
+            <p align="left"><a href="Game.TwT.html">Alice the Knight</a> - quick experiment in trying to make a click through game</p>
+            <p align="left"><a href="layout.table.html">Gradient Page Layout</a> - free page layout design I made that inspired my current site</p>
+            <p align="left"><a href="layout.side.html">Sidebar Page Layout</a> - free page layout design I made inspired by old web pages</p>
+            
+        </div>
+        
+    </div>
+
+<!-- Falling Stars -->
+    <div id="mainbar" align="center">
+        
+        <h3>Falling Stars</h3>
+        
+        <p align="left">This is the code I put on my page to generate the randomly falling stars in the background. You can change the text inside the p tags in the document.write section to anything you want.</p>
+        <p align="left">HTML code:</p>
+        
+        <textarea align="left">
+
+  <script>
+      
+      for (let i = 0; i < 34; i++) {
+      
+      var scrollamount = Math.floor(Math.random() * 5) + 1;
+      var scrolldelay = Math.floor(Math.random() * 101);
+      var left = 0 + 3*i;
+      
+      document.write("<marquee class='rain' behavior='scroll' direction='down' scrollamount='" + scrollamount + "' scrolldelay='" + scrolldelay + "' style='position:fixed; left:" + left + "%; top:0px; width:5; height:700px;'><p id='star-color'>&#8201;.<br>&#8201;.<br>+<br>✩</p></marquee>"); 
+      
+      /*Script to print out marquee variables for testing*/
+      
+      /*const para = document.createElement("p");
+      const node = document.createTextNode("Scrollamount = " + scrollamount + " scrolldelay = " + scrolldelay + " left = " + left + ".");
+      para.appendChild(node);
+      const element = document.getElementById("_______div id________");
+      element.appendChild(para);*/
+      }
+      
+  </script>
+
+        </textarea>
+        
+        <p align="left">CSS code:</p>
+        
+        <textarea align="left">
+
+    #star-color {
+    color: #9AAFCD;
+    }
+    
+    .rain {
+    z-index: -1;
+    }
+
+        </textarea>
+
+    </div>
+
+<!-- Cipher Encoder -->
+    <div id="mainbar" align="center">
+        
+        <h3>Cipher Encoder</h3>
+        
+        <p align="left">This is code I used to create different ciphers for my Secret Garden page. When you enter your text it encodes the letters according to a simple substitution cipher.</p>
+        
+        <p align="left">HTML code:</p>
+        
+        <textarea>
+<script>
+      
+      function cipherText() {
+      var text = document.getElementById("cipher").value;
+      
+      var text = text.toLowerCase();
+      var text = text.replaceAll("a", "@");
+      var text = text.replaceAll("b", "d");
+      var text = text.replaceAll("c", "k");
+      var text = text.replaceAll("d", ":");
+      var text = text.replaceAll("e", "=");
+      var text = text.replaceAll("f", "e");
+      var text = text.replaceAll("g", ">");
+      var text = text.replaceAll("h", "#");
+      var text = text.replaceAll("i", "(");
+      var text = text.replaceAll("j", "{︎");
+      var text = text.replaceAll("k", "[");
+      var text = text.replaceAll("l", "~");
+      var text = text.replaceAll("m", "}︎");
+      var text = text.replaceAll("n", "!");
+      var text = text.replaceAll("o", "*");
+      var text = text.replaceAll("p", "&");
+      var text = text.replaceAll("q", "<");
+      var text = text.replaceAll("r", ")");
+      var text = text.replaceAll("s", "$");
+      var text = text.replaceAll("t", "+");
+      var text = text.replaceAll("u", "%݁");
+      var text = text.replaceAll("v", "^");
+      var text = text.replaceAll(",", "l");
+      var text = text.replaceAll(".", "a");
+      var text = text.replaceAll("w", ".");
+      var text = text.replaceAll("x", "]");
+      var text = text.replaceAll("y", ";");
+      var text = text.replaceAll("z", "?");
+      var text = text.replaceAll("!", "b");
+      var text = text.replaceAll("?", "c");
+      var text = text.replaceAll("(", "x");
+      var text = text.replaceAll(")", "y");
+      
+      document.getElementById("output").innerHTML = text;
+      }
+      
+</script>
+
+<form>
+      
+      &lt;textarea id="cipher"&gt;Enter your text here&lt;/textarea&gt;
+      <input type="button" value="Submit" onclick="cipherText();"/>
+      
+</form>
+
+&lt;textarea id="output"&gt;=b+=y ;*%݁y +=]+ #=y=&lt;/textarea&gt;
+
+        </textarea>
+
+        <script type="text/javascript">
+        
+            function cipherText() {
+            var text = document.getElementById("cipher").value;
+            
+            var text = text.toLowerCase();
+            var text = text.replaceAll("a", "@");
+            var text = text.replaceAll("b", "d");
+            var text = text.replaceAll("c", "k");
+            var text = text.replaceAll("d", ":");
+            var text = text.replaceAll("e", "=");
+            var text = text.replaceAll("f", "e");
+            var text = text.replaceAll("g", ">");
+            var text = text.replaceAll("h", "#");
+            var text = text.replaceAll("i", "(");
+            var text = text.replaceAll("j", "{︎");
+            var text = text.replaceAll("k", "[");
+            var text = text.replaceAll("l", "~");
+            var text = text.replaceAll("m", "}︎");
+            var text = text.replaceAll("n", "!");
+            var text = text.replaceAll("o", "*");
+            var text = text.replaceAll("p", "&");
+            var text = text.replaceAll("q", "<");
+            var text = text.replaceAll("r", ")");
+            var text = text.replaceAll("s", "$");
+            var text = text.replaceAll("t", "+");
+            var text = text.replaceAll("u", "%݁");
+            var text = text.replaceAll("v", "^");
+            var text = text.replaceAll(",", "l");
+            var text = text.replaceAll(".", "a");
+            var text = text.replaceAll("w", ".");
+            var text = text.replaceAll("x", "]");
+            var text = text.replaceAll("y", ";");
+            var text = text.replaceAll("z", "?");
+            var text = text.replaceAll("!", "b");
+            var text = text.replaceAll("?", "c");
+            var text = text.replaceAll("(", "x");
+            var text = text.replaceAll(")", "y");
+            
+            document.getElementById("output").innerHTML = text;
+            }
+            
+        </script>
+        
+        <h3>Translate Text to Cipher:</h3>
+        
+        <p align="left">This is an example cipher you could use to encode text.</p>
+        
+        <table>
+        <tr>
+          <td>
+            
+            <textarea id="output">=b+=y ;*%݁y +=]+ #=y=</textarea>
+            
+        </td>
+        <td>
+            
+            <form>
+                
+                <textarea id="cipher">Enter your text here</textarea>
+                <input type="button" value="Submit" onclick="cipherText();"/>
+                
+            </form>
+            
+        </td>
+        </tr>
+        </table>
+        
+    </div>
+
+<!-- Randomizing Page Elements -->
+    <div id="mainbar" align="center">
+        
+        <h3>Randomizing Page Elements</h3>
+        
+        <p align="left">This code can be used to randomize an array of things (pun intended) from text to pictures to entire divs. It uses an array to create a numbered list of html code snipets that are mixed up, so that when it prints the first entry on the list it's a random element. If you pull on multiple code snipets in the array they will all be different.</p>
+        
+        <p align="left">HTML code:</p>
+        
+        <textarea>
+
+<script>
+
+    var arrayName = new Array ();
+    arrayName[0] = "put one set words, pictures or code you want as an option here";
+    arrayName[1] = "put another set words, pictures or code you want as an option here";
+    
+    arrayName.sort(() => Math.random() - 0.5);
+    
+    document.write("<p>Your randome thing is: </p>" + arrayName[0] + "<p>!</p>");
+    
+</script>
+
+        </textarea>
+        
+        <h3>Random Picture Table</h3>
+        
+        <p align="left">This is an example of the randomizing code used to create a table of different randomly selected pictures.</p>
+        
+        <input type="button" value="Generate New Random Pictures" onclick="Randomize()"/>
+        
+        <p></p>
+        
+        <table>
+        <tr>
+        <td width="50%">
+            
+            <textarea id="table">
+
+<script>
+  
+    // Sets the nine images that could be in the table
+    var picc = new Array (); 
+    
+    picc[0] = "<img src='Images/Random-1.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+    picc[1] = "<img src='Images/Random-2.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+    picc[2] = "<img src='Images/Random-3.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+    picc[3] = "<img src='Images/Random-4.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+    picc[4] = "<img src='Images/Random-5.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+    picc[5] = "<img src='Images/Random-6.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+    picc[6] = "<img src='Images/Random-7.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+    picc[7] = "<img src='Images/Random-8.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+    
+    //  Randomly reassigns them a number 0-8
+    picc.sort(() => Math.random() - 0.5);
+    
+    // Adds html code that creates a table and adds the first four pictures from the array in it
+    document.write("<table><tr><td>"+ picc[0]  + "</td><td>" + picc[1] + "</td></tr><tr><td>" + picc[2] + "</td><td>" + picc[3] + "</td></tr></table>"); 
+  
+</script>
+
+            </textarea>
+            
+        </td>
+        <td>
+            
+            <script>
+                
+                var picc = new Array (); 
+                
+                picc[0] = "<img src='Images/Random-1.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+                picc[1] = "<img src='Images/Random-2.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+                picc[2] = "<img src='Images/Random-3.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+                picc[3] = "<img src='Images/Random-4.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+                picc[4] = "<img src='Images/Random-5.png.png' alt='placeholder image with purple geometric designs' width='100%'>"; 
+                picc[5] = "<img src='Images/Random-6.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+                picc[6] = "<img src='Images/Random-7.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+                picc[7] = "<img src='Images/Random-8.png.png' alt='placeholder image with purple geometric designs' width='100%'>";
+                
+                picc.sort(() => Math.random() - 0.5);
+                
+                document.write("<table><tr><td class='pict'>"+ picc[0]  + "</td><td class='pict'>" + picc[1] + "</td></tr><tr><td class='pict'>" + picc[2] + "</td><td class='pict'>" + picc[3] + "</td></tr></table>"); 
+                
+                let pict = document.getElementsByClassName("pict");
+                
+                function Randomize() 
+                {
+                  picc.sort(() => Math.random() - 0.5);
+                  
+                  pict[0].innerHTML = picc[0];
+                  pict[1].innerHTML = picc[1];
+                  pict[2].innerHTML = picc[2];
+                  pict[3].innerHTML = picc[3];
+                  
+                }
+            </script>
+            
+        </td>
+        </tr>
+        </table>
+        
+    </div>
+    
+    </main>
+  </td>
+  </tr>
+  </table>
+
+<!-- Javascript code for raining stars -->
+  <script>
+      
+      for (let i = 0; i < 34; i++) {
+      
+      var scrollamount = Math.floor(Math.random() * 5) + 1;
+      var scrolldelay = Math.floor(Math.random() * 101);
+      var left = 0 + 3*i;
+      
+      document.write("<marquee class='rain' behavior='scroll' direction='down' scrollamount='" + scrollamount + "' scrolldelay='" + scrolldelay + "' style='position:fixed; left:" + left + "%; top:0px; width:5; height:700px;'><p id='star-color'>&#8201;.<br>&#8201;.<br>+<br>✩</p></marquee>"); 
+      
+      /*Script to print out marquee variables for testing*/
+      
+      /*const para = document.createElement("p");
+      const node = document.createTextNode("Scrollamount = " + scrollamount + " scrolldelay = " + scrolldelay + " left = " + left + ".");
+      para.appendChild(node);
+      const element = document.getElementById("_______div id________");
+      element.appendChild(para);*/
+      }
+      
+  </script>
+ 
+  </body>
+</html>
