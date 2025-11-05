@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+      <title>Saturn's Laundromat</title>
+      <meta name="description" content="A personal website for all my coding projects, art pieces, and whatever else I'm proud of.">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <link rel="icon" href="Images/favicon.ico" type="image/x-icon"/>
+      <link rel="stylesheet" href="css.css"/>
+      <style type=text/css>
+
+.rain {
+  z-index: -1;
+}
+
+      </style>
+      
+  </head>
+  <body>
+  
+    <a href="#content" id="skip-to-content">Skip to content</a>
+    
+  <table>
+
+<!-- Header -->
+  <tr>
+  <td colspan="2" align="center">
+    <div align="center" id="top">
+        
+        <h1 id="gradient_text" class="title"><span class="bounce">✩</span> Saturn's Laundromat <span class="bounce">✩</span></h1>
+        
+    </div>
+  </td>
+  </tr>
+
+<!-- Sidebar -->
+  <tr>
+  <td id="side">
+    <div id="sidebar-group">
+    <div id="sidebar">
+        
+        <h2 align="left"><a href="coding.html">Coding Projects</a></h2>
+        
+    </div>   
+    <div id="sidebar">
+        
+        <h2 align="left"><a href="art.html">My Art</a></h2>
+        
+    </div>
+    <div id="sidebar">
+        
+       <h2 align="left"><a href="links.html">Links</a></h2>
+        
+    </div>
+    </div>
+  </td>
+
+<!-- Main Body -->
+  <td id="main">
+    <main id="content">
+    <div id="mainbar" align="center">
+        
+        <div id="head">
+            
+            <h2 align="center">Welcome!</h2>
+            <p align="center">This is a website for all my coding projects, art pieces, and whatever else I'm proud of. Please have a look around and enjoy your stay! -Sophia (she/her)</p>
+            <p align="center"><img src="Images/Saturn.gif"></p>
+            
+        </div>
+        
+        <h3 align="left">Why the name Saturn's Laundromat?</h3>
+        
+        <p align="left">I wanted something that sounded dreamy and pensive but still untimatly mundane. Plus, I read a story from Cricket magazine awhile ago that talked about all the random things you lost ending up in Saturn's rings, and I always thought that idea sounded really cute.</p>
+        
+        <h3 align="left">How'd you get into html coding?</h3>
+        
+        <p align="left">I saw a post online talking about neocities, and I went to go look around at all the cool websites different people had on there. It really inspired me so I decided to start my own website, and after lots of googling and experiments I made this!</p>
+        
+        <h3 align="left">What book are you currently reading?</h3>
+         
+        <p align="left">I'm reading Children of Time by Adrian Tchaikovsky, a sci-fi book that explores themes of evolution, time, and life. I would recommend it to anyone who wants to read about the evolution of a spider society!</p>
+        
+        <h6 align="center">Sources:<br> 
+        Fonts from <a href="https://cinni.net" target="_blank">Cinni's Dream House</a> and <a href="https://www.asterism-m.com/" target="_blank">Asterism</a><br>
+        Lace borders from <a href="https://foollovers.com/" target="_blank">Fool Lovers</a></h6>
+        
+    </div>
+    </main>
+  </td>
+  </tr>
+  </table>
+
+  <!-- Javascript code for raining stars -->
+  <script>
+      
+      for (let i = 0; i < 34; i++) {
+      
+      var scrollamount = Math.floor(Math.random() * 5) + 1;
+      var scrolldelay = Math.floor(Math.random() * 101);
+      var left = 0 + 3*i;
+      
+      document.write("<marquee class='rain' behavior='scroll' direction='down' scrollamount='" + scrollamount + "' scrolldelay='" + scrolldelay + "' style='position:fixed; left:" + left + "%; top:0px; width:5; height:700px;'><p id='star-color'>&#8201;.<br>&#8201;.<br>+<br>✩</p></marquee>"); 
+      
+      //Script to print out marquee variables for testing
+      //
+      //const para = document.createElement("p");
+      //const node = document.createTextNode("Scrollamount = " + scrollamount + " scrolldelay = " + scrolldelay + " left = " + left + ".");
+      //para.appendChild(node);
+      //const element = document.getElementById("_______div id________");
+      //element.appendChild(para);
+      }
+      
+  </script>
+  
+  </body>
+</html>
